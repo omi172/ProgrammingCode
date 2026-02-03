@@ -12,6 +12,7 @@ public class Stack {
         pushElement(5, store);
         popElement(store);
         popElement(store);
+        checkIsEmpty(store);
     }
     static void pushElement(int element,ArrayList<Integer> store){
         store.add(element);
@@ -30,3 +31,4 @@ public class Stack {
         }
     }
 }
+
