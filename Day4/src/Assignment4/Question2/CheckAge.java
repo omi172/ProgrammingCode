@@ -1,15 +1,15 @@
 package Assignment4.Question2;
 
 public class CheckAge {
-    private int studentsAge;
-    public CheckAge(int student){
-        this.studentsAge = student;
+    private int voterAge;
+    public CheckAge(int voterAge){
+        this.voterAge = voterAge;
     }
     public void check() throws InvalidAgeForVoterException {
-        if(studentsAge < 18) {
-            throw new InvalidAgeForVoterException("Not Suitable For Vote");
+        if(voterAge > 15 && voterAge < 21) {
+            System.out.println("Age Is Valid");
         }else{
-            System.out.println("Valid age for Vote");
+            throw new InvalidAgeForVoterException("Age is not within range");
         }
     }
 }
