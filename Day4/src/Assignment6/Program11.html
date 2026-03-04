@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Gallery</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; background-color: #f4f4f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .input-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+        label { font-weight: bold; margin-bottom: 5px; color: #333; }
+        input:not([type="checkbox"]):not([type="radio"]) { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .row { display: flex; gap: 10px; align-items: center; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>The Master Input List</h2>
+    <form>
+        <div class="input-group">
+            <label>Text Input:</label>
+            <input type="text" placeholder="Standard text">
+        </div>
+
+        <div class="input-group">
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password">
+        </div>
+
+        <div class="input-group">
+            <label>Email:</label>
+            <input type="email" placeholder="name@example.com">
+        </div>
+
+        <div class="input-group">
+            <label>Number:</label>
+            <input type="number" min="0" max="100" value="25">
+        </div>
+
+        <div class="input-group">
+            <label>Checkbox:</label>
+            <div class="row"><input type="checkbox" id="check1"> <label for="check1">I agree</label></div>
+        </div>
+
+        <div class="input-group">
+            <label>Radio Buttons:</label>
+            <div class="row">
+                <input type="radio" name="choice" id="r1"> <label for="r1">Option A</label>
+                <input type="radio" name="choice" id="r2"> <label for="r2">Option B</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Color Picker:</label>
+            <input type="color" value="#007BFF">
+        </div>
+
+        <div class="input-group">
+            <label>Date Picker:</label>
+            <input type="date">
+        </div>
+
+        <div class="input-group">
+            <label>File Upload:</label>
+            <input type="file">
+        </div>
+
+        <div class="input-group">
+            <label>Range (Slider):</label>
+            <input type="range" min="0" max="100">
+        </div>
+
+        <div class="input-group">
+            <label>Search:</label>
+            <input type="search" placeholder="Search keywords...">
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset All">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

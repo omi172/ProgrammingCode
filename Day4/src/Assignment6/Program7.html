@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Identity Card Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .id-card {
+            width: 450px;
+            background-color: #fff;
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card-header {
+            background-color: #003366; /* Formal Navy Blue */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        .label {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        .photo-box {
+            width: 100px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #eee;
+            color: #888;
+            font-size: 11px;
+        }
+
+        .status-footer {
+            background-color: #eee;
+            text-align: center;
+            font-weight: bold;
+            color: #444;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="id-card">
+    <div class="card-header">IDENTITY RECORD</div>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="photo-box">
+                    PHOTO<br>AREA
+                </td>
+                <td class="label">Name</td>
+                <td>Johnathan Doe</td>
+            </tr>
+            <tr>
+                <td class="label">Aadhar No.</td>
+                <td>1234 5678 9012</td>
+            </tr>
+            <tr>
+                <td class="label">PAN No.</td>
+                <td>ABCDE1234F</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="status-footer">
+                    VERIFIED GOVERNMENT DATA
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
